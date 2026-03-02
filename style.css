@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+html, body{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
 .flow-circular-regular {
     font-family: "Flow Circular", system-ui;
     font-weight: 400;
@@ -17,18 +21,21 @@
 body {
     background-color: black;
     color: white;
-    overflow-x: hidden;
 }
-
+.left, .right{
+    scroll-behavior: smooth;
+}
 .left {
     width: 300px;
     max-width: 25vw;
     overflow-y: auto;
+    height: 100vh;
     overflow-x: hidden;
 }
 
 .right {
     flex: 1;
+    height: 100vh;
     overflow-y: auto;
 }
 
