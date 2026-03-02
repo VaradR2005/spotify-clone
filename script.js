@@ -1,19 +1,19 @@
 console.log("Lets write javascript");
-async function getsongs() {
+async function getsongs(){
     let songs = [
-        "songs/Aage_Peeche.mp3",
-        "songs/Abhi_kuch_dino_se.mp3",
-        "songs/Dil_ka_jo_haal_he.mp3",
-        "songs/Kyon.mp3",
-        "songs/Matargashti.mp3",
-        "songs/Param_Sundari.mp3",
-        "songs/Tera_hone_laga_hu.mp3",
-        "songs/Tu_jane_na.mp3",
-        "songs/Uff_teri_aada.mp3",
-        "songs/Ye_tune_kya_kiya.mp3"
-    ];
+        "/songs/Aage_Peeche.mp3",
+        "/songs/Abhi_kuch_dino_se.mp3",
+        "/songs/Dil_ka_jo_haal_he.mp3",
+        "/songs/Kyon.mp3",
+        "/songs/Matargashti.mp3",
+        "/songs/Param_Sundari.mp3",
+        "/songs/Tera_hone_laga_hu.mp3",
+        "/songs/Tu_jane_na.mp3",
+        "/songs/Uff_teri_aada.mp3",
+        "/songs/Ye_tune_kya_kiya.mp3"
+    ]
 
-    return songs;
+    return songs
 }
 // async function getsongs() {
 //     let a = await fetch("http://127.0.0.1:3000/songs/")
@@ -30,7 +30,7 @@ async function getsongs() {
 //         }
 //     }
 //     return songs
-}
+
 async function main() {
 
     let songs = await getsongs();
