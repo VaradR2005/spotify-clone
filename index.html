@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home"></li>
+                    <li><img class="invert" src="search.svg" alt="search"></li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1">
+                <div class="heading">
+                    <h3>Your Library</h3> <img class="invert" src="playlist.svg" alt="">
+                </div>
+                <div class="playNowContainer">
+                    <div class="musicRow">
+                        <img class="invert" src="music.svg" alt="">
+                        <button class="playNowBtn">
+                            <img src="play.svg" alt="play">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <!-- <img class="invert" src="music.svg" alt=""> -->
+                        <li> Aage Peeche.mp3</li>
+                        <li>Abhi kuch dino se.mp3</li>
+                        <li>Dil ka jo haal he.mp3</li>
+                        <li>Kyon.mp3</li>
+                        <li>Matargashti.mp3</li>
+                        <li>Param Sundari.mp3</li>
+                        <li>Tera Hone laga hu.mp3</li>
+                        <li>Tu Jane Na.mp3</li>
+                        <li>Uff Teri Aada.mp3</li>
+                        <li>Ye Tune kya kiya.mp3</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header bg-grey rounded m-1">
+                <div class="nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="currentColor" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="Signupbtn">Sign Up</button>
+                    <button class="Loginbtn">Log In</button>
+                </div>
+            </div>
+            <div class="spotifyplaylists">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt=" ">
+                        <h2>Ye Jawaani Hai Deewani</h2>
+                        <p>Pritam</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0248be563b0c9f1d7985a7c608" alt=" ">
+                        <h2>Aaya Sher(From"The Paradise")(Telugu)</h2>
+                        <p>Anirudh Ravichander</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d5e938b81196c3f19b78dce9" alt=" ">
+                        <h2>Bairi</h2>
+                        <p>Virat, Pradeep Solanki</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ba52c35bca6b280c7a9233ce" alt=" ">
+                        <h2>Deewaana Deewaana</h2>
+                        <p>A.R. Rahaman</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e5e73c74d92e7c97645106d7" alt=" ">
+                        <h2>Laila Main Laila</h2>
+                        <p>Pawni Pandey</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt=" ">
+                        <h2>Aashiqui 2</h2>
+                        <p>Mithoon</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef" alt=" ">
+                        <h2>Raanjhan(From "Do Patti")</h2>
+                        <p>Sachet-Parampara</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"
+                                style="cursor:pointer; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+
+                                <!-- Green Circle Background -->
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+                                <!-- Black Play Icon -->
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e021aa5adad8593923dcdf1a7d0" alt=" ">
+                        <h2>Ultimate Love Songs</h2>
+                        <p>Arijit Singh</p>
+                    </div>
+                </div>
+                <div class="playerbar">
+                    <div class="songinfo"></div>
+                    <!-- <div class="songbuttons">
+                        <img src="previous.svg" alt="">
+                        <img src="play.svg" alt="">
+                        <img src="next.svg" alt="">
+                    </div> -->
+                    <div class="songtime"></div>
+                    <div class="playbar">
+                        <img class="invert" id="previousBtn" src="previous.svg" alt="previous">
+                        <img class="invert" id="playBtn" class="play-btn" src="play.svg" alt="play">
+                        <img class="invert" id="nextBtn" src="next.svg" alt="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
