@@ -1,5 +1,5 @@
 console.log("Lets write javascript");
-async function getsongs(){
+async function getsongs() {
     let songs = [
         "/songs/Aage_Peeche.mp3",
         "/songs/Abhi_kuch_dino_se.mp3",
@@ -30,11 +30,33 @@ async function getsongs(){
 //         }
 //     }
 //     return songs
+let currentSong = new Audio()
+
+currentSong.addEventListener("timeupdate", () => {
+
+    document.querySelector(".songtime").innerHTML =
+        `${formatTime(currentSong.currentTime)} / ${formatTime(currentSong.duration)}`;
+
+    document.querySelector(".circle").style.left =
+        (currentSong.currentTime / currentSong.duration) * 100 + "%";
+
+})
+
+function formatTime(seconds) {
+    if (isNaN(seconds)) return "00:00"
+
+    let minutes = Math.floor(seconds / 60)
+    let secs = Math.floor(seconds % 60)
+
+    if (secs < 10) secs = "0" + secs
+
+    return `${minutes}:${secs}`
+}
 
 async function main() {
 
     let songs = await getsongs();
-    let audio = new Audio();
+    let audio = currentSong;
     let currentSongIndex = 0;
 
     if (songs.length > 0) {
@@ -69,6 +91,8 @@ async function main() {
         audio.src = songs[currentSongIndex];
         await audio.play();
         playBtn.src = "pause.svg";
+        document.querySelector(".songinfo").innerText =
+        songs[currentSongIndex].split("/songs/")[1].replaceAll("_"," ");
     });
 
     // PREVIOUS
@@ -78,6 +102,8 @@ async function main() {
         audio.src = songs[currentSongIndex];
         await audio.play();
         playBtn.src = "pause.svg";
+        document.querySelector(".songinfo").innerText =
+        songs[currentSongIndex].split("/songs/")[1].replaceAll("_"," ");
     });
 
     // Click song from list
@@ -88,6 +114,8 @@ async function main() {
                 audio.src = songs[currentSongIndex];
                 await audio.play();
                 playBtn.src = "pause.svg";
+                document.querySelector(".songinfo").innerText =
+                    songs[currentSongIndex].split("/songs/")[1].replaceAll("_", " ");
             });
         });
 
@@ -95,6 +123,22 @@ async function main() {
     audio.addEventListener("ended", () => {
         nextBtn.click();
     });
+
+    document.querySelector(".seekbar").addEventListener("click", e => {
+
+        let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100
+
+        document.querySelector(".circle").style.left = percent + "%"
+
+        audio.currentTime = (audio.duration * percent) / 100
+
+    })
+
+    document.querySelector(".volume").addEventListener("input", e => {
+
+        audio.volume = e.target.value / 100
+
+    })
 
 }
 

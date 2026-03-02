@@ -10,6 +10,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -260,8 +261,13 @@
                         <img src="play.svg" alt="">
                         <img src="next.svg" alt="">
                     </div> -->
-                    <div class="songtime"></div>
                     <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+
+                        <div class="songtime">00:00 / 00:00</div>
+                        <input type="range" class="volume" min="0" max="100" value="50">
                         <img class="invert" id="previousBtn" src="previous.svg" alt="previous">
                         <img class="invert" id="playBtn" class="play-btn" src="play.svg" alt="play">
                         <img class="invert" id="nextBtn" src="next.svg" alt="next">
