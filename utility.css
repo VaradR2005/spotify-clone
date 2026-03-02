@@ -27,19 +27,44 @@
     margin:5px;
     ;
 }
-.cardContainer::-webkit-scrollbar {
+/* .cardContainer::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #181818;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a2a;
+  background: #555;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: #888;
+} */
+
+/* ===== Spotify Style Scrollbar ===== */
+
+/* width of scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* track (background) */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* draggable part */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+/* hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
 }

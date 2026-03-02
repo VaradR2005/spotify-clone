@@ -59,8 +59,23 @@ async function main() {
     let audio = currentSong;
     let currentSongIndex = 0;
 
+    function highlightActiveSong() {
+        document.querySelectorAll(".songlist li").forEach(li => {
+            li.classList.remove("active")
+        })
+
+        let songsList = document.querySelectorAll(".songlist li")
+        if (songsList[currentSongIndex]) {
+            songsList[currentSongIndex].classList.add("active")
+        }
+    }
+
     if (songs.length > 0) {
         audio.src = songs[0];
+        document.querySelector(".songinfo").innerText =
+            songs[0].split("/songs/")[1].replaceAll("_", " ");
+
+        highlightActiveSong();
     }
 
     const playBtn = document.getElementById("playBtn");
@@ -92,7 +107,8 @@ async function main() {
         await audio.play();
         playBtn.src = "pause.svg";
         document.querySelector(".songinfo").innerText =
-        songs[currentSongIndex].split("/songs/")[1].replaceAll("_"," ");
+            songs[currentSongIndex].split("/songs/")[1].replaceAll("_", " ");
+        highlightActiveSong();
     });
 
     // PREVIOUS
@@ -103,7 +119,8 @@ async function main() {
         await audio.play();
         playBtn.src = "pause.svg";
         document.querySelector(".songinfo").innerText =
-        songs[currentSongIndex].split("/songs/")[1].replaceAll("_"," ");
+            songs[currentSongIndex].split("/songs/")[1].replaceAll("_", " ");
+        highlightActiveSong();
     });
 
     // Click song from list
@@ -116,6 +133,7 @@ async function main() {
                 playBtn.src = "pause.svg";
                 document.querySelector(".songinfo").innerText =
                     songs[currentSongIndex].split("/songs/")[1].replaceAll("_", " ");
+                highlightActiveSong();
             });
         });
 
