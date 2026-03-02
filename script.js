@@ -9,7 +9,7 @@ async function getsongs(){
         "/songs/Param_Sundari.mp3",
         "/songs/Tera_hone_laga_hu.mp3",
         "/songs/Tu_jane_na.mp3",
-        "/songs/Uff_teri_aada.mp3",
+        "/songs/uff_teri_aada.mp3",
         "/songs/Ye_tune_kya_kiya.mp3"
     ]
 

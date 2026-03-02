@@ -46,15 +46,23 @@ body {
     align-items: center;
 }
 
-.footer {
+/* .footer {
     display: flex;
     font-size: 10px;
     color: grey;
     gap: 13px;
     position: absolute;
     bottom: 0px;
-}
+} */
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    margin-top: 20px;
+}
 .right {
     margin: 16px 0;
     position: relative;
@@ -73,17 +81,21 @@ body {
 .header>* {
     padding: 20px;
 }
-
 .spotifyplaylist {
     padding: 16px;
+    padding-bottom: 120px;
 }
+
+/* .spotifyplaylist {
+    padding: 16px;
+} */
 
 .cardContainer {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 700vh;
+    max-height: 70vh;
 }
 
 .card {
@@ -93,14 +105,29 @@ body {
     background-color: #252525;
     position: relative;
 }
-
 .card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* .card img {
     padding: 5px;
     width: 150px;
     object-fit: contain;
-}
-
+} */
 .play {
+    width: 40px;
+    height: 40px;
+    background-color: #1DB954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+/* .play {
     width: 28px;
     height: 28px;
     background-color: #1DB954;
@@ -114,7 +141,7 @@ body {
     top: 201px;
     right: 17px;
     opacity: 1;
-}
+} */
 
 .buttons>* {
     margin: 0 12px;
@@ -215,13 +242,13 @@ body {
     transform: scale(1.05);
     background-color: #1ed760;
 }
+ 
 .musicRow{
-    display: flex;          /* puts items in one line */
-    align-items: center;    /* vertical alignment */
-    gap: 105px;              /* space between icon and button */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 5px 14px;
 }
-/* ===== Improved Bottom Playbar ===== */
 
 .playbar{
     position: fixed;
